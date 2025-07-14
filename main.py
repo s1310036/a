@@ -16,7 +16,7 @@ app = FastAPI()
 # React など別オリジンからのリクエストを許可
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # フロントエンドの URL
+    allow_origins=["http://localhost:3001"],  # フロントエンドの URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
